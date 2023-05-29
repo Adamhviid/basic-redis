@@ -2,4 +2,5 @@
 terminal -> redis-server
 
 2)
-node index.js
+npm i <br/ >
+npm start
