@@ -10,6 +10,7 @@ redisClient.on("connect", () => console.log("Connected to Redis..."));
 
 await redisClient.connect();
 
-redisClient.set("myKey", "some value");
+redisClient.set("myKey", "some value",);
+redisClient.expire("myKey", 25);
 const value = await redisClient.get("myKey");
 console.log(value);
